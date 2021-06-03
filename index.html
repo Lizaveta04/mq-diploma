@@ -55,90 +55,94 @@
 
 	</div>
 
-	<section class="trend">
-		
-		<div class="garden">
+	<div class="block-of-trends">
 
-			<div class="garden-text">
+		<section class="trends">
+
+			<div class="trend garden">
+
+				<div class="trend-text">
 				
-				<ul class="list-items">
-					<li class="items">
-						<a href="#" class="item">Lifestyle</a>
-					</li>
-					<li class="items">
-						<a href="#" class="item">Interior</a>
-					</li>
-				</ul>
+					<ul class="list-items">
+						<li class="items">
+							<a href="#" class="item">Lifestyle</a>
+						</li>
+						<li class="items">
+							<a href="#" class="item">Interior</a>
+						</li>
+					</ul>
 
-				<h2 class="trend-info">
-					<a href="#" class="trend-info-text">Сейчас в тренде: сад на подоконнике</a>
-				</h2>
+					<h2 class="trend-info">
+						<a href="#" class="trend-info-text">Сейчас в тренде: сад на подоконнике</a>
+					</h2>
 
+				</div>
+			
 			</div>
-			
-		</div>
 
-		<div class="cheese">
+			<div class="trend cheese">
 
-			<div class="cheese-text">
+				<div class="trend-text">
 				
-				<ul class="list-items">
-					<li class="items">
-						<a href="#" class="item">Food</a>
-					</li>
-				</ul>
+					<ul class="list-items">
+						<li class="items">
+							<a href="#" class="item">Food</a>
+						</li>
+					</ul>
 			
-				<h2 class="trend-info">
-					<a href="#" class="trend-info-text">Сыры на красивых картинках из интернета: какие они на вкус?</a>
-				</h2>
+					<h2 class="trend-info">
+						<a href="#" class="trend-info-text">Сыры на красивых картинках из интернета: какие они на вкус?</a>
+					</h2>
 
+				</div>
+			
 			</div>
-			
-		</div>
 
-		<div class="trip">
+			<div class="trend trip">
 
-			<div class="trip-text">
+				<div class="trend-text">
 				
-				<ul class="list-items">
-					<li class="items">
-						<a href="#" class="item">Lifestyle</a>
-					</li>
-					<li class="items">
-						<a href="#" class="item">Travel</a>
-					</li>
-				</ul>			
+					<ul class="list-items">
+						<li class="items">
+							<a href="#" class="item">Lifestyle</a>
+						</li>
+						<li class="items">
+							<a href="#" class="item">Travel</a>
+						</li>
+					</ul>			
 
-				<h2 class="trend-info">
-					<a href="#" class="trend-info-text">Собираемся в первый поход в горы</a>
-				</h2>
+					<h2 class="trend-info">
+						<a href="#" class="trend-info-text">Собираемся в первый поход в горы</a>
+					</h2>
 
+				</div>
+				
 			</div>
-				
-		</div>
 
-		<div class="lemon"> 
+			<div class="trend lemon"> 
 
-			<div class="lemon-text">
+				<div class="trend-text">
 			
-				<ul class="list-items">
-					<li class="items">
-						<a href="#" class="item">Food</a>
-					</li>
-					<li class="items">
-						<a href="#" class="item">Health</a>
-					</li>
-				</ul>			
+					<ul class="list-items">
+						<li class="items">
+							<a href="#" class="item">Food</a>
+						</li>
+						<li class="items">
+							<a href="#" class="item">Health</a>
+						</li>
+					</ul>			
 			
-				<h2 class="trend-info">
-					<a href="#" class="trend-info-text">Сейчас в тренде: сколько витамина с в лимонах?</a>
-				</h2>
+					<h2 class="trend-info">
+						<a href="#" class="trend-info-text">Сейчас в тренде: сколько витамина с в лимонах?</a>
+					</h2>
 						
-			</div>
+				</div>
 
-		</div>
-	
-	</section>
+			</div>
+			
+		</section>
+		
+	</div>
 
 	<div class="main-content">
 
@@ -527,19 +531,43 @@
 
 			<div class="shop-item">
 
-				<div class="shop-item-picture">
-					<img src="images/shop-item-desk1.jpg">
-				</div>
+				<picture class="shop-item-picture">
+					
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk1.jpg">
+
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet1.jpg">
+
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile1.jpg">
+
+					<img src="images/shop-item-desk1.jpg" alt="Фото товара">
+
+				</picture>
 
 				<div class="shop-item-text">
+					
 					<h2 class="item-caption">Подушки на диван</h2>
-					<p class="item-info">Набор из двух подушек с модными принтами. Видео о создании здесь.</p>
-					<h2 class="old-price">1000 ₽</h2>
-					<h2 class="price">800 ₽</h2>
-				
-					<button type="submit" class="shop-button">
-						<span>В магазин</span>
-					</button>
+					<p class="item-info">Набор из двух подушек с модными принтами. Видео о создании <a class="item-info-link" href="#">здесь</a>.</p>
+
+					<div class="shop-container">
+
+						<div class="prices">
+							<h2 class="old-price">1000 ₽</h2>
+							<h2 class="price">800 ₽</h2>
+						</div>
+
+						<div class="button">
+							<button type="submit" class="shop-button">
+								<span>В магазин</span>
+							</button>
+						</div>
+
+					</div>
 
 				</div>
 
@@ -547,18 +575,42 @@
 
 			<div class="shop-item">
 
-				<div class="shop-item-picture">
-					<img src="images/shop-item-desk2.jpg">
-				</div>
+				<picture class="shop-item-picture">
+					
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk2.jpg">
+
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet2.jpg">
+
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile2.jpg">
+
+					<img src="images/shop-item-desk2.jpg" alt="Фото товара">
+
+				</picture>
 
 				<div class="shop-item-text">
+					
 					<h2 class="item-caption">Кукла "Зайчик"</h2>
-					<p class="item-info">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена весенняя серия постов в блоге и несколько подкастов.</p>
-					<h2 class="price">3500 ₽</h2>
-				
-					<button type="submit" class="shop-button">
-						<span>В магазин</span>
-					</button>
+					<p class="item-info">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="item-info-link" href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+
+					<div class="shop-container">
+					
+						<div class="prices">
+							<h2 class="price">3500 ₽</h2>
+						</div>
+
+						<div class="button">
+							<button type="submit" class="shop-button">
+								<span>В магазин</span>
+							</button>
+						</div>
+
+					</div>
 
 				</div>
 				
@@ -566,19 +618,43 @@
 
 			<div class="shop-item">
 
-				<div class="shop-item-picture">
-					<img src="images/shop-item-desk3.jpg">
-				</div>
+				<picture class="shop-item-picture">
+					
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk3.jpg">
+
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet3.jpg">
+
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile3.jpg">
+
+					<img src="images/shop-item-desk3.jpg" alt="Фото товара">
+
+				</picture>
 
 				<div class="shop-item-text">
+
 					<h2 class="item-caption">Шестиугольная рамка</h2>
-					<p class="item-info">Необычная рамка для украшения дома из видео «Как сделать рамку из подручных средств за 30 минут».</p>
-					<h2 class="old-price">500 ₽</h2>
-					<h2 class="price">400 ₽</h2>
-		
-					<button type="submit" class="shop-button">
-						<span>В магазин</span>
-					</button>
+					<p class="item-info">Необычная рамка для украшения дома из видео <a class="item-info-link" href="#">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
+
+					<div class="shop-container">
+					
+						<div class="prices">
+							<h2 class="old-price">500 ₽</h2>
+							<h2 class="price">400 ₽</h2>
+						</div>
+
+						<div class="button">
+							<button type="submit" class="shop-button">
+								<span>В магазин</span>
+							</button>
+						</div>
+
+					</div>
 
 				</div>
 
