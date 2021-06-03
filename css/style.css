@@ -107,7 +107,7 @@
 	display: flex;
 	justify-content: center;
 	
-	margin-bottom: 46px;
+	margin-bottom: 29px;
 }
 
 .block-caption {
@@ -128,24 +128,139 @@
 	padding-top: 6px;
 }
 
-.trend {
-	display: flex;
+.blocks-of-trends {
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.garden {
+.trends {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.trend {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	width: 25%;
+	margin-right: 4px;
+	box-sizing: border-box;
+}
+
+.garden {
 	background-image: url("../images/trend1.jpg");
 	background-repeat: no-repeat;
 	background-color: #000000;
 	background-size: cover;
-	width: 25%;
-	margin-right: 4px;
+	position: relative;
+	z-index: 0;
+	padding-top: 158px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 22px;
+	box-sizing: border-box;
 }
 
-.garden-text {
+.garden::after {
+	content: "";
+	background-color: #000000;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	opacity: 0.6;
+}
+
+.cheese {
+	background-image: url("../images/trend2.jpg");
+	background-repeat: no-repeat;
+	background-color: #000000;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	padding-top: 158px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 22px;
+	box-sizing: border-box;
+}
+
+.cheese::after {
+	content: "";
+	background-color: #000000;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	opacity: 0.6;
+}
+
+.trip {
+	background-image: url("../images/trend3.jpg");
+	background-repeat: no-repeat;
+	background-color: #000000;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	padding-top: 158px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 22px;
+	box-sizing: border-box;
+}
+
+.trip::after {
+	content: "";
+	background-color: #000000;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	opacity: 0.6;
+}
+
+.lemon {
+	background-image: url("../images/trend4.jpg");
+	background-repeat: no-repeat;
+	background-color: #000000;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	padding-top: 158px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-bottom: 22px;
+	box-sizing: border-box;
+}
+
+.lemon::after {
+	content: "";
+	background-color: #000000;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	opacity: 0.6;
+}
+
+.trend-text {
+	box-sizing: border-box;
 	border: 3px solid #b59f5b;
+	padding: 40px 35px;
+	position: relative;
+	z-index: 2;
 }
 
 .trend-info-text {
@@ -153,58 +268,11 @@
 	font-size: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
-	line-height: 1.2;
 	text-decoration: none;
+	line-height: 1.2;
+	text-align: left;
+	box-sizing: border-box;
 }
-
-.cheese {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	background-image: url("../images/trend2.jpg");
-	background-repeat: no-repeat;
-	background-color: #000000;
-	background-size: cover;
-	width: 25%;
-	margin-right: 4px;
-}
-
-.cheese-text {
-	border: 3px solid #b59f5b;
-}
-
-.trip {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	background-image: url("../images/trend3.jpg");
-	background-repeat: no-repeat;
-	background-color: #000000;
-	background-size: cover;
-	width: 25%;
-	margin-right: 4px;
-}
-
-.trip-text {
-	border: 3px solid #b59f5b;
-}
-
-
-.lemon {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	background-image: url("../images/trend4.jpg");
-	background-repeat: no-repeat;
-	background-color: #000000;
-	background-size: cover;
-	width: 25%;
-}
-
-.lemon-text {
-	border: 3px solid #b59f5b;
-}
-
 
 .main-content {
 	display: flex;
@@ -519,7 +587,6 @@
 .shop {
 	width: 1122px;
 	margin: auto;
-	margin-bottom: 65px;
 }
 
 .shop-items {
@@ -562,6 +629,25 @@
 	text-align: left;
 }
 
+.item-info-link {
+	color: #b59f5b;
+	text-decoration: none;
+}
+
+.shop-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prices {
+	padding-top: 37px;
+}
+
+.button {
+	padding-top: 27px;
+
+}
+
 .price {
 	font-family: OpenSans-Bold;
 	font-size: 20px;
@@ -597,7 +683,7 @@
 }
 
 .footer {
-	padding-bottom: 26px;
+	padding-bottom: 46px;
 }
 
 .footer-box {
@@ -605,6 +691,7 @@
 	background-color: #f4f7f6;
 
 	margin: auto;
+	margin-top: 92px;
 }
 
 .list-social-icons {
@@ -658,5 +745,5 @@
 	text-align: center;
 
 	display: block;
-	margin-top: 70px;
+	margin-top: 75px;
 }
