@@ -595,6 +595,8 @@
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
+
+  display: block;
 } 
 
 .email-form {
@@ -922,6 +924,8 @@
 	}
 	.article {
 		flex-direction: column;
+	}
+	.article:nth-child(-n+4) {
 		border-bottom: 3px solid #eeeeee;
 	}
 	.article-picture {
@@ -1020,6 +1024,8 @@
 	.article {
 		flex-direction: column;
 		width: 100%;
+	}
+	.article:nth-child(-n+4) {
 		border-bottom: 3px solid #eeeeee;
 	}
 	.article-picture {
