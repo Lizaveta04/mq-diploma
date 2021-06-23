@@ -219,8 +219,8 @@
 }
 
 .menu-button {
-    width: 1.4em;
-    height: 1em;
+    width: 1.3em; 
+    height: 1em; 
     border: none;
     padding: 0;
     background-color: transparent;
@@ -405,13 +405,11 @@
 
 .article {
 	display: flex;
-	align-items: flex-start;
 
 	margin-bottom: 59px;
 }
 
-.article-picture {
-	box-sizing: border-box;
+.article-picture img {
 	max-width: 380px;
 	width: 100%;
 }
@@ -530,7 +528,7 @@
 }
 
 .new-posts {
-	width: 270px;
+	width: 274px;
 }
 
 .new-post {
@@ -705,6 +703,8 @@
 .shop {
 	max-width: 1122px;
 	margin: auto;
+	padding-left: 34px;
+	padding-right: 34px;
 }
 
 .shop-items {
@@ -868,14 +868,20 @@
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+	.header {
+		background-image: url("../images/banner-bg-tablet.jpg")
+		padding-top: 40px;
+		padding-right: 34px;
+		padding-left: 34px;
+	}
 	.menu-button:before {
     	top: 0;
 	}
 	.menu-button:before, .menu-button:after {
     	content: "";
     	width: 100%;
-    	height: 20%;
-    	border-radius: 5px;
+    	height: 3px;
+    	margin-top: 2px;
     	background-color: #ffffff;
     	position: absolute;
     	left: 0;
@@ -885,9 +891,8 @@
 	}
 	.menu-button-label {
     	width: 100%;
-    	height: 20%;
-    	margin-top: -0.1em;
-    	border-radius: 5px;
+    	height: 3px;
+    	
     	background-color: #ffffff;
     	position: absolute;
     	left: 0;
@@ -895,9 +900,6 @@
 	}
 	.menu-list {
 		display: none;
-	}
-	.header {
-		background-image: url("../images/banner-bg-tablet.jpg")
 	}
 	.trends {
 		flex-wrap: wrap;
@@ -916,6 +918,7 @@
 	}
 	.news {
 		flex-grow: 1;
+		padding-right: 35px;
 	}
 	.article {
 		flex-direction: column;
@@ -941,21 +944,30 @@
 
 @media (max-width: 640px) {
 	.header {
-		background-image: url("../images/banner-mobile.jpg")
+		background-image: url("../images/banner-mobile.jpg");
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.header-content {
+		flex-direction: column;
+		padding-top: 276px;
+	}
+	.logo {
+		display: flex;
+	}
+	.logo-picture {
+		padding-left: 45px;
+		padding-right: 45px;
+		width: 100%;
 	}
 	.menu-list {
 		display: none;
 	}
 	.menu-button {
-    	width: 1.4em;
-    	height: 1em;
-    	border: none;
-    	padding: 0;
-    	background-color: transparent;
-    	font-size: 25px;
-    	position: relative;
-    	text-indent: -9999px;
-    	cursor: pointer;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top: 0;
 	}
 	.menu-button:before {
     	top: 0;
@@ -963,8 +975,8 @@
 	.menu-button:before, .menu-button:after {
     	content: "";
     	width: 100%;
-    	height: 20%;
-    	border-radius: 5px;
+    	height: 3px;
+    	margin-top: 2px;
     	background-color: #ffffff;
     	position: absolute;
     	left: 0;
@@ -974,13 +986,15 @@
 	}
 	.menu-button-label {
     	width: 100%;
-    	height: 20%;
-    	margin-top: -0.1em;
-    	border-radius: 5px;
+    	height: 3px;
+    	
     	background-color: #ffffff;
     	position: absolute;
     	left: 0;
     	top: 50%;
+	}
+	.title {
+		margin-top: 43px;
 	}
 	.trends {
 		flex-wrap: wrap;
