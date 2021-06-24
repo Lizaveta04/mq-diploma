@@ -222,7 +222,6 @@
     width: 1.3em; 
     height: 1em; 
     border: none;
-    padding: 0;
     background-color: transparent;
     font-size: 25px;
     position: relative;
@@ -405,8 +404,11 @@
 
 .article {
 	display: flex;
-
 	margin-bottom: 59px;
+}
+
+.article-picture {
+	flex: none;
 }
 
 .article-picture img {
@@ -797,6 +799,8 @@
 
 .footer {
 	padding-bottom: 46px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .footer-box {
@@ -805,8 +809,6 @@
 
 	margin: auto;
 	margin-top: 92px;
-	padding-right: 15px;
-	padding-left: 15px;
 }
 
 .list-social-icons {
@@ -903,20 +905,22 @@
 	.menu-list {
 		display: none;
 	}
+	.title-text {
+		font-size: 40px;
+		line-height: 1.4;
+	}
 	.trends {
 		flex-wrap: wrap;
 	}
 	.trend {
-		width: 48%;
+		width: calc(50% - 2px);
+		margin-bottom: 4px;
 	}
 	.trend:nth-child(n+2) {
 		margin-left: 0px;
 	}
 	.trend:nth-child(2n+2) {
 		margin-left: 4px;
-	}
-	.trend:nth-child(-1n+2) {
-		margin-bottom: 4px;
 	}
 	.news {
 		flex-grow: 1;
@@ -980,7 +984,7 @@
     	content: "";
     	width: 100%;
     	height: 3px;
-    	margin-top: 2px;
+    	margin-top: 4px;
     	background-color: #ffffff;
     	position: absolute;
     	left: 0;
@@ -999,6 +1003,10 @@
 	}
 	.title {
 		margin-top: 43px;
+	}
+	.title-text {
+		font-size: 26px;
+		line-height: 1.4;
 	}
 	.trends {
 		flex-wrap: wrap;
@@ -1051,7 +1059,7 @@
 	.shop-item:nth-child(n+2) {
 		margin-top: 50px;
 	}
-	.footer-box {
+	.footer {
 		box-sizing: border-box;
 	}
 }
